@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --bg: #2f4550;
+  --primary: #586f7c;
+  --secondary: #b8dbd9;
+  --light: #f4f4f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+  background-image: url(./assets/bg.svg) !important;
+  background-size: cover;
+}
+
+#navbar {
+  background-color: #1580cb !important;
+  box-shadow: 0 0 10px var(--light);
+}
+
+.main {
+  margin-top: 8rem;
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0 !important;
+  box-shadow: 0 0 10px var(--light);
+  background: rgba(255, 255, 255, 0.2) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card a {
+  text-decoration: none !important;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.card .card-title {
+  font-size: 1rem !important;
+}
+.card .card-title a {
+  color: var(--light);
+  display: block;
+  font-size: 1.3rem !important;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card .card-title a:hover {
+  color: #f15a03;
+}
+
+.card .photographer-id {
+  font-size: 0.8rem !important;
+}
+
+.card-text a {
+  color: var(--light) !important;
+}
+
+.welcome {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--bg);
+  /* background: -webkit-linear-gradient(20deg, #0f225e, #ffffff); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  text-align: center;
+}
+
+.welcomeString {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 0 30px var(--bg);
+  backdrop-filter: blur(20px);
+}
